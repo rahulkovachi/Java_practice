@@ -8,6 +8,7 @@ public class Fib
         int n= sc.nextInt(),s=1;
         int a[]=new int [n+1];
         a[0]=a[1]=1;
+        int sum=0;
         for(int i=2;i<=n;i++)
         {
            a[i]=a[i-1]+a[i-2];
@@ -23,5 +24,10 @@ public class Fib
             s=s*i;
             System.out.print(s+" ");
         }
+
+        for(int i=1;i<=n;i++)
+            sum=sum+i;
+        System.out.println("Sum of First n numbers");
+        System.out.println(sum);
     }
 }
